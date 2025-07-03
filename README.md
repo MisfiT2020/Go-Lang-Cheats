@@ -33,8 +33,27 @@ Use this section to jot down your observations, tips, or any custom reminders as
 - println auto-creates the new line  
 - printf for using with vars  
 - <code>:=</code> sugar syntax can be used for assigning vars directly (but not const)  
-- defining int types explicitly for robust code
+- defining int types explicitly for robust code  
 - the data type should be in same format when performing any  
+
+</details>
+
+<details>
+<summary>Mid</summary>
+
+- Arrays require fixed size; not flexible for unknown lengths  
+```go
+var someThing [50]string
+someThing[0] = var1 + "" + var2
+```
+- Slices are dynamic arrays; no fixed size needed  
+```go
+var someThing []string
+someThing = append(someThing, "value")
+```
+- Blank identifier "_" when we want to ignore something or when we expect a value, that we dont need  
+
+![Slice Data Method](sources/sliceData.png)
 
 </details>
 
@@ -42,8 +61,8 @@ Use this section to jot down your observations, tips, or any custom reminders as
 
 ## Configuration
 
-```go
-go init mod <project name> //to initialize the dir as a package
+```bash
+go mod init go-lang-cheats
 ```
 
 ---
@@ -60,3 +79,10 @@ import "fmt"
 func main() {
     fmt.Println("Hello, Go-Lang-Cheats!")
 }
+```
+
+---
+
+## License
+
+Distributed under the MIT License. See [LICENSE](LICENSE) for details.
