@@ -54,6 +54,7 @@ someThing = append(someThing, "value")
 - Blank identifier "_" when we want to ignore something or when we expect a value, that we dont need  
 
 ![Slice Data Method](sources/sliceData.png)
+- Unlimited else-if statements in b/w, if/else statements
 
 </details>
 
